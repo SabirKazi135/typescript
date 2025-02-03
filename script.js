@@ -8,4 +8,14 @@ const menu = [
 const cashinRegister = 100;
 const orderQueue = [];
 
+function addNewPizza(pizzaObj) {
+  menu.push(pizzaObj);
+}
+function placeorder(name) {
+  menu.forEach((array) => {
+    if (array.name == name) {
+      cashinRegister += array.price;
+    }
+  });
+}
 
