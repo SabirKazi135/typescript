@@ -1,3 +1,1 @@
-let age: any = 10;
-age = "twenty";
-console.log(age);
+let age: unknown = 10;
