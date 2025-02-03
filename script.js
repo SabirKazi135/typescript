@@ -4,3 +4,8 @@ const menu = [
   { name: "pizza3", price: 10 },
   { name: "pizza4", price: 9 },
 ];
+
+const cashinRegister = 100;
+const orderQueue = [];
+
+
