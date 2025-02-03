@@ -13,6 +13,9 @@ function addNewPizza(pizzaObj) {
 }
 function placeorder(name) {
   const selectedpizza = menu.find((pizzaObj) => pizzaObj.name === name);
+  if (!selectedpizza) {
+    console.error(`${pizzaname} does not exit`);
+  }
   cashinRegister = selectedpizza.price;
   const newOrder = {
     id: nextorderId++,
@@ -32,7 +35,7 @@ addNewPizza({ name: "pizza6", price: 12 });
 addNewPizza({ name: "pizza7", price: 11 });
 
 placeorder("pizza5");
-completeOrder("1");
+completeOrder(1);
 
 console.log("Menu", menu);
 console.log("Cash in register", cashinRegister);
