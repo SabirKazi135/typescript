@@ -4,4 +4,10 @@ type Ob = {
   year: number;
 };
 
-let car;
+let car: Ob = {
+  brand: "toyota",
+  model: "model1",
+  year: 2020,
+};
+
+console.log(car);
