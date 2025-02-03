@@ -1,7 +1,7 @@
-let tuple: [string, number] = ["sabir", 22];
+type Ob = {
+  brand: string;
+  model: string;
+  year: number;
+};
 
-function print() {
-  return `${tuple[0]} is ${tuple[1]}`;
-}
-
-console.log(print());
+let car;
