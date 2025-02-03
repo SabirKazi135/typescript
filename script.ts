@@ -1,8 +1,6 @@
-const car: { type: string; mileage: number } = {
-  // Error: Property 'mileage' is missing in type '{ type: string; }' but required in type '{ type: string; mileage: number; }'.
-  type: "Toyota",
-};
+const nameAgeMap: { [index: string]: number } = {};
 
-car.mileage = 2000;
+nameAgeMap.num = 44;
+nameAgeMap.age = 22;
 
-console.log(car);
+console.log(nameAgeMap);
