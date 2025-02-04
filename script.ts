@@ -5,4 +5,4 @@ let x = 10;
 const y = 130;
 
 let sum;
-const title;
+const title = "SabirIsGreat";
