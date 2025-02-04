@@ -1,3 +1,2 @@
-type HasLenghth<T> = T extends { length: number } ? T : never;
-
-
+const msg = document.getElementById("message") as HTMLElement;
+msg.textContent = "Hell sabir  lets Go";

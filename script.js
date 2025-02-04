@@ -1,2 +1,2 @@
-var message = "Welcome Back";
-console.log(message);
+var msg = document.getElementById("message");
+msg.textContent = "Hell sabir  lets Go";
