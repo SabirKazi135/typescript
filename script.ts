@@ -1,5 +1,11 @@
-function add(num1: number, num2: number = 10): number {
-  return num1 + num2;
+function fullName(person: { firstName: string; lastName: string }) {
+  console.log(`${person.firstName} ${person.lastName}`);
 }
 
-console.log(add(2));
+let p = {
+  firstName: "sabir",
+  lastName: "kazi",
+};
+
+fullName(p);
+
