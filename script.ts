@@ -1,8 +1,15 @@
-class Person {
-  Myname?: string;
+class Animal {
+  private name: string;
+
+  constructor(name: string) {
+    this.name = name;
+  }
+
+  private speak() {
+    console.log(`${this.name} makes a noise`);
+  }
 }
 
-const person1 = new Person();
-person1.Myname = "sabir";
-
-console.log(person1);
+const dog = new Animal("Dog");
+// console.log(dog.name);
+dog.speak();
