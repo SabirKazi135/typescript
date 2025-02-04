@@ -1,8 +1,7 @@
 type UserId = (number | string)[];
 
-function formatUserId(array: UserId): string[] {
-  return array.map((id) => `User ID:${id}`);
+function filterString(array: UserId): string[] {
+  return array.filter((str): str is string => typeof str === "string");
 }
 
-console.log(filterNumbers([101, "XYZ123", 202, "ABC456"])); 
-// Output: [101, 202]
+console.log(filterString([101, "XYZ123", 202, "ABC456"]));
