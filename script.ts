@@ -1,18 +1,8 @@
-let message = "Welcome Back";
-console.log(message);
+let n: null = null;
+let u: undefined = undefined;
 
-let x = 10;
-const y = 130;
+let list1: number[] = [1, 2, 3, 4, 5];
+console.log(list1);
 
-let sum;
-const title = "SabirIsGreat";
-
-let isBegninner: boolean = true;
-
-let total: number = 0;
-let Myname: string = "sabir";
-
-Myname = true;
-let sentence: string = `My Myname is ${Myname}`;
-
-console.log(sentence);
+let person1: [string, number] = ["sabir", 4];
+console.log(person1);
