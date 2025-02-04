@@ -1,8 +1,8 @@
-let n: null = null;
-let u: undefined = undefined;
+enum Color {
+  red,
+  green,
+  blue,
+}
 
-let list1: number[] = [1, 2, 3, 4, 5];
-console.log(list1);
-
-let person1: [string, number] = ["sabir", 4, 6];
-console.log(person1);
+let c: Color = Color.blue;
+console.log(c);
