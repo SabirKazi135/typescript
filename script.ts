@@ -1,14 +1,14 @@
-interface Person {
-  firstName: string;
-  lastName?: string;
-}
-function fullName(person: Person) {
-  console.log(`${person.firstName} ${person.lastName}`);
+class Employee {
+  employeeName: string;
+  constructor(name: string) {
+    this.employeeName = name;
+  }
+
+  greet() {
+    console.log(`Good Morning ${this.employeeName}`);
+  }
 }
 
-let p = {
-  firstName: "sabir",
-  lastName: "kazi",
-};
-
-fullName(p);
+let emp1 = new Employee("vishwas");
+console.log(emp1.employeeName);
+emp1.greet();
