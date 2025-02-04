@@ -1,8 +1,4 @@
-enum Color {
-  red = 10,
-  green,
-  blue,
-}
+let random: any = 10;
+random = "hell";
 
-let c: Color = Color.blue;
-console.log(c);
+console.log(random);
