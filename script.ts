@@ -1,5 +1,5 @@
-function add(num1: number, num2: number) {
+function add(num1: number, num2: number = 10): number {
   return num1 + num2;
 }
 
-console.log(add(2, 5));
+console.log(add(2));
