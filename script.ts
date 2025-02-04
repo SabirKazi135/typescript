@@ -1,15 +1,34 @@
-class Animal {
-  private name: string;
+interface Shape {
+  getArea: () => number;
+}
 
-  constructor(name: string) {
-    this.name = name;
+class Rectangle implements Shape {
+  // using protected for these members allows access from classes that extend from this class, such as Square
+  public constructor(
+    protected readonly width: number,
+    protected readonly height: number
+  ) {}
+
+  public getArea(): number {
+    return this.width * this.height;
   }
 
-  private speak() {
-    console.log(`${this.name} makes a noise`);
+  public toString(): string {
+    return `Rectangle[width=${this.width}, height=${this.height}]`;
   }
 }
 
-const dog = new Animal("Dog");
-// console.log(dog.name);
-dog.speak();
+class Square extends Rectangle {
+  public constructor(width: number) {
+    super(width, width);
+  }
+
+  // this toString replaces the toString from Rectangle
+  public override toString(): string {
+    return `Square[width=${this.width}]`;
+  }
+}
+
+const mySq = new Square(20);
+
+console.log(mySq.toString());
