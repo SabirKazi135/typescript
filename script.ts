@@ -1,4 +1,8 @@
-function fullName(person: { firstName: string; lastName: string }) {
+interface Person {
+  firstName: string;
+  lastName?: string;
+}
+function fullName(person: Person) {
   console.log(`${person.firstName} ${person.lastName}`);
 }
 
@@ -8,4 +12,3 @@ let p = {
 };
 
 fullName(p);
-
