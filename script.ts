@@ -1,13 +1,6 @@
-type Ob = {
-  brand: string;
-  model: string;
-  year: number;
-};
+type UserId = number | string;
 
-let car: Ob = {
-  brand: "toyota",
-  model: "model1",
-  year: 2020,
-};
+let sabir: UserId = 1;
+let raees: UserId = "ab123";
 
-console.log(car);
+console.log(sabir, raees);
