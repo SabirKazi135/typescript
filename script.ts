@@ -1,7 +1,7 @@
-function returnValue<T>(value: T): T {
-  return value;
+function returnValue<T>(arr: T[]): T {
+  return arr[0];
 }
 
-console.log(returnValue<string>("sabir"));
-console.log(returnValue<number>(10));
-console.log(returnValue<boolean>(true));
+console.log(returnValue<string>(["sabir", "raees"]));
+console.log(returnValue<number>([10, 12]));
+console.log(returnValue<boolean>([false, true]));
