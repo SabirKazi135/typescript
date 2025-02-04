@@ -1,7 +1,8 @@
 type UserId = (number | string)[];
 
-function filterString(array: UserId): string[] {
-  return array.filter((str): str is string => typeof str === "string");
+function seprate(array: UserId): { numbers: number[], strings: string[] }  {
+  return {
+    numbers: Array.filter(num)
+  }
 }
 
-console.log(filterString([101, "XYZ123", 202, "ABC456"]));
