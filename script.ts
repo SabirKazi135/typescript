@@ -6,3 +6,7 @@ const y = 130;
 
 let sum;
 const title = "SabirIsGreat";
+
+let isBegninner: boolean = true;
+
+let total: number = 0;
