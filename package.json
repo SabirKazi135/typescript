@@ -1,0 +1,23 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabirKazi135/typescript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SabirKazi135/typescript/issues"
+  },
+  "homepage": "https://github.com/SabirKazi135/typescript#readme",
+  "description": "",
+  "dependencies": {
+    "typescript": "^5.7.3"
+  }
+}
