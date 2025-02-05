@@ -1,5 +1,14 @@
-function multiply(num1: number, num2: number): number {
-  return num1 * num2;
-}
+const Person: {
+  personName: string;
+  age: number;
+  isStudent: boolean;
+  introduce: () => string;
+} = {
+  personName: "sabir",
+  age: 22,
+  isStudent: false,
 
-console.log(multiply(10, 20));
+  introduce: function (): string {
+    return `My name is ${this.personName} `;
+  },
+};

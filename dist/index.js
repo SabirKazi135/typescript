@@ -1,5 +1,9 @@
 "use strict";
-function multiply(num1, num2) {
-    return num1 * num2;
-}
-console.log(multiply(10, 20));
+const Person = {
+    personName: "sabir",
+    age: 22,
+    isStudent: false,
+    introduce: function () {
+        return `My name is ${this.personName} `;
+    },
+};
