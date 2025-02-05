@@ -1,7 +1,5 @@
-const arr: number[] = [4, 5, 6, 7, 8, 9];
+function multiply(num1: number, num2: number): number {
+  return num1 * num2;
+}
 
-let sum: number = arr.reduce((total: number, num: number): number => {
-  return total + num;
-}, 0);
-
-console.log(sum);
+console.log(multiply(10, 20));

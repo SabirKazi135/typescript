@@ -1,6 +1,5 @@
 "use strict";
-const arr = [4, 5, 6, 7, 8, 9];
-let sum = arr.reduce((total, num) => {
-    return total + num;
-}, 0);
-console.log(sum);
+function multiply(num1, num2) {
+    return num1 * num2;
+}
+console.log(multiply(10, 20));
