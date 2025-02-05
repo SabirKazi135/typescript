@@ -1,5 +1,7 @@
-let str: string = "sabir";
-let num: number = 10;
-let bool: boolean = true;
+const arr: number[] = [4, 5, 6, 7, 8, 9];
 
-console.log(str, num, bool);
+let sum: number = arr.reduce((total: number, num: number): number => {
+  return total + num;
+}, 10);
+
+console.log(sum);
