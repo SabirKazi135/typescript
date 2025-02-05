@@ -1,6 +1,5 @@
 "use strict";
-const heading = document.querySelector("h1");
-if (heading) {
-    heading.textContent = "Hello sabir from TypeScript!";
-}
-console.log("TypeScript is working!");
+let str = "sabir";
+let num = 10;
+let bool = true;
+console.log(str, num, bool);
